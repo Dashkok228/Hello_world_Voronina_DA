@@ -1,0 +1,16 @@
+researcher_name = input("ФИО исследователя: ")
+date = input("Дата: ")
+experiment_name = input("Название эксперимента: ")
+conclusion = input("Сделайте вывод по эксперименту: ")
+with open("journal.txt", "w", encoding = "utf-8") as report:
+    report.write("+" + "-"* 48 + "+\n")
+    report.write(f"| {'Электронный лабораторный журнал':<48} |\n")
+    report.write("+" + "-" * 48 + "+\n")
+    report.write(f"|{'ФИО исследователя: '+ researcher_name:<48}|\n")
+    report.write(f"|{'Дата : '+ date:<48}|\n")
+    report.write(f"|{'Название эксперимента: '+ experiment_name:<48}|\n")
+    report.write("+" + "-" * 48 +"+\n")
+    report.write(f"|{'Вывод: |'+ conclusion:<48}|\n")
+    report.write("+" + "-" * 48 + "+\n")
+print("\nДанные успешно сохранены в файл journal.txt")   
+
