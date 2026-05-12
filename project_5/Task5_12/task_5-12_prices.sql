@@ -1,0 +1,22 @@
+SELECT product_id, COUNT(*) AS record_count
+FROM prices
+GROUP BY product_id
+ORDER BY product_id ASC;
+
+
+SELECT product_id, AVG(price) AS average_price
+FROM prices
+GROUP BY product_id
+ORDER BY product_id ASC;
+
+
+SELECT product_id, MIN(price) AS min_price
+FROM prices
+GROUP BY product_id
+ORDER BY product_id ASC;
+
+
+SELECT product_id, MAX(price) AS max_price
+FROM prices
+GROUP BY product_id
+ORDER BY product_id ASC;

@@ -1,0 +1,9 @@
+SELECT category, COUNT(*) AS product_count
+FROM products
+GROUP BY category;
+
+
+SELECT category, COUNT(*) AS product_count
+FROM products
+GROUP BY category
+ORDER BY product_count DESC;
